@@ -1,207 +1,89 @@
-/* =========================
-   RESET GLOBAL
-========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* =========================
-   VARIÁVEIS DE COR
-========================= */
-:root {
-    --azul-fundo: #0f172a;
-    --azul-header-footer: #020617;
-    --azul-card: #1e293b;
-    --azul-destaque: #2563eb;
-    --azul-hover: #1d4ed8;
-
-    --texto-principal: #e5e7eb;
-    --texto-secundario: #94a3b8;
-    --borda: #334155;
-}
-
-/* =========================
-   BODY
-========================= */
 body {
-    min-height: 100vh;
-    background-color: var(--azul-fundo);
-    color: var(--texto-principal);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
     line-height: 1.6;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
-/* =========================
-   HEADER (FAIXA SUPERIOR)
-========================= */
 header {
-    width: 100%;
-    background-color: var(--azul-header-footer);
-    padding: 20px 0;
-    text-align: center;
+    background-color: #0f172a;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 header a {
-    color: var(--texto-principal);
+    color: #ffffff;
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
+    letter-spacing: 1px;
 }
-
-/* =========================
-   MAIN
-========================= */
 main {
-    flex: 1;
+    max-width: 1000px;
     width: 100%;
-    max-width: 1100px;
     margin: 0 auto;
-    padding: 32px 20px;
+    padding: 30px;
 }
-
-/* =========================
-   TIPOGRAFIA
-========================= */
 h1 {
-    text-align: center;
     font-size: 2.4rem;
+    text-align: center;
     margin-bottom: 20px;
+    color: #0f172a;
 }
 
 h2 {
     font-size: 1.8rem;
-    margin-bottom: 12px;
-    color: var(--azul-destaque);
+    margin-bottom: 10px;
+    color: #1e293b;
 }
 
 h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
     text-align: center;
-    margin-bottom: 12px;
+    color: #334155;
 }
 
 p {
     text-align: center;
-    color: var(--texto-secundario);
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+    color: #475569;
 }
-
-/* =========================
-   LINKS / OPÇÕES
-========================= */
-.secao-recursos {
-    display: grid;
-    gap: 12px;
-}
-
-.secao-recursos a {
-    display: block;
-    padding: 14px 18px;
-    background-color: var(--azul-card);
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--texto-principal);
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.secao-recursos a:hover {
-    background-color: var(--azul-destaque);
-}
-
-/* =========================
-   BOTÕES
-========================= */
 button {
-    background-color: var(--azul-destaque);
-    color: var(--texto-principal);
+    background-color: #2563eb;
+    color: #ffffff;
     border: none;
     padding: 10px 18px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.2s;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: var(--azul-hover);
+    background-color: #1d4ed8;
 }
 
 td button {
-    background-color: #dc2626;
+    background-color: #ef4444;
 }
 
 td button:hover {
-    background-color: #b91c1c;
+    background-color: #dc2626;
 }
-
-/* =========================
-   TABELA
-========================= */
-table {
-    width: 100%;
-    margin-top: 24px;
-    border-collapse: collapse;
-    background-color: var(--azul-card);
-    border-radius: 12px;
-    overflow: hidden;
+footer {
+    background-color: #0f172a;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: auto;
 }
-
-thead {
-    background-color: #020617;
-}
-
-th, td {
-    padding: 14px;
-    border-bottom: 1px solid var(--borda);
-}
-
-/* =========================
-   INPUTS
-========================= */
-input, select {
-    width: 100%;
-    padding: 10px;
-    background-color: #020617;
-    border: 1px solid var(--borda);
-    border-radius: 8px;
-    color: var(--texto-principal);
-}
-
-input:focus, select:focus {
-    outline: none;
-    border-color: var(--azul-destaque);
-}
-
-/* =========================
-   TOTAL
-========================= */
-#total {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--azul-destaque);
-}
-
-/* =========================
-   LISTAS (SEM PONTOS)
-========================= */
-ul, ol {
-    list-style: none;
-    padding-left: 0;
-}
-
-#totais-categoria li {
-    background-color: var(--azul-card);
-    padding: 12px 16px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-}
-
-/* =========================
-   GUIA INICIANTE
-========================= */
-main.iniciante {
 
