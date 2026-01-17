@@ -15,7 +15,7 @@
 
 /* ===== BODY ===== */
 body {
-    background-color: #f9fafb;
+    background-color: #f8fafc;
     color: #334155;
     min-height: 100vh;
     display: flex;
@@ -62,65 +62,66 @@ main {
     margin: 40px auto;
     padding: 36px;
     background-color: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     animation: fadeUp 0.5s ease both;
 }
 
 /* ===== TÍTULOS ===== */
 h1 {
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     color: #1e293b;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-weight: 700;
 }
 
 h2 {
     text-align: center;
-    font-size: 1.55rem;
+    font-size: 1.5rem;
     color: #2563eb;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 
 p {
     text-align: center;
     max-width: 650px;
-    margin: 0 auto 22px auto;
-    line-height: 1.75;
-    color: #64748b;
+    margin: 0 auto 20px auto;
+    line-height: 1.7;
+    color: #475569;
 }
 
 /* ======================
    SEÇÃO DE RECURSOS
 ====================== */
 .secao-recursos {
-    margin-top: 45px;
+    margin-top: 40px;
     text-align: center;
     animation: fadeUp 0.6s ease both;
 }
 
 .secao-recursos h2 {
-    font-size: 1.65rem;
+    font-size: 1.6rem;
     color: #1e293b;
+    margin-bottom: 20px;
 }
 
 .secao-recursos ul {
     list-style: none;
-    max-width: 380px;
+    max-width: 360px;
     margin: 0 auto;
 }
 
 .secao-recursos li {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .secao-recursos a {
     display: block;
-    padding: 16px;
+    padding: 14px;
     background-color: #f1f5f9;
-    border-radius: 14px;
+    border-radius: 12px;
     text-decoration: none;
     color: #1e293b;
     font-weight: 600;
@@ -138,48 +139,49 @@ p {
    GUIA PARA INICIANTES
 ====================== */
 main.iniciante {
-    padding: 44px;
+    padding: 40px;
 }
 
 /* Introdução */
 .iniciante .introducao {
-    max-width: 680px;
-    margin: 0 auto 45px auto;
-    font-size: 1.15rem;
-    color: #64748b;
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.7;
     text-align: center;
 }
 
 /* Cards */
 .iniciante .card-sessao {
     background-color: #f8fafc;
-    border-radius: 16px;
-    padding: 32px;
-    margin-bottom: 32px;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 30px;
     border: 1px solid #e5e7eb;
     animation: fadeUp 0.6s ease both;
 }
 
 .iniciante .card-sessao:hover {
     transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
 .iniciante .card-sessao h2 {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 /* ===== IMAGEM ===== */
 .imagem-regra {
     display: block;
-    max-width: 400px;
+    max-width: 380px;
     width: 100%;
-    margin: 32px auto;
-    border-radius: 16px;
+    margin: 30px auto;
+    border-radius: 14px;
 }
 
 .imagem-regra:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     box-shadow: 0 14px 30px rgba(0,0,0,0.12);
 }
 
@@ -188,16 +190,16 @@ main.iniciante {
 ====================== */
 .iniciante .navegacao-final {
     display: flex;
-    gap: 28px;
-    margin-top: 55px;
+    gap: 24px;
+    margin-top: 50px;
 }
 
 .iniciante .botao-proximo,
 .iniciante .botao-voltar {
     flex: 1;
-    padding: 16px 0;
     text-align: center;
-    border-radius: 14px;
+    padding: 14px 0;
+    border-radius: 12px;
     font-weight: 700;
     text-decoration: none;
     position: relative;
