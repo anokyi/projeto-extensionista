@@ -1,14 +1,24 @@
-body {
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8fafc;
-    color: #1e293b;
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: #f0f9ff;
+    color: #1f2933;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
+/* ===== HEADER ===== */
 header {
-    background-color: #0f172a;
+    background-color: #3b82f6;
     height: 80px;
     display: flex;
     align-items: center;
@@ -23,50 +33,87 @@ header a {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+/* ===== MAIN ===== */
 main {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     padding: 30px;
 }
+
+/* ===== TÍTULOS ===== */
 h1 {
     font-size: 2.4rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #0f172a;
+    color: #1e3a8a;
 }
 
 h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #1e293b;
+    color: #1d4ed8;
 }
 
 h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
     text-align: center;
-    color: #334155;
+    color: #2563eb;
 }
 
 p {
     text-align: center;
     margin-bottom: 15px;
-    color: #475569;
+    color: #334155;
 }
+
+/* ===== SEÇÃO DE RECURSOS ===== */
+.secao-recursos ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 420px;
+}
+
+.secao-recursos li {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.secao-recursos a {
+    display: block;
+    padding: 14px 18px;
+    background-color: #e0f2fe;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.secao-recursos a:hover {
+    background-color: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== BOTÕES ===== */
 button {
-    background-color: #2563eb;
-    color: #ffffff;
+    background-color: #22c55e;
+    color: white;
     border: none;
-    padding: 10px 18px;
-    border-radius: 10px;
+    padding: 12px 20px;
+    border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #1d4ed8;
+    background-color: #16a34a;
+    transform: translateY(-2px);
 }
 
 td button {
@@ -76,14 +123,97 @@ td button {
 td button:hover {
     background-color: #dc2626;
 }
+
+/* ===== TABELA ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #e0f2fe;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* ===== INPUTS ===== */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* ===== TOTAL ===== */
+#total {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* ===== LISTA DE CATEGORIAS ===== */
+#totais-categoria {
+    margin-top: 12px;
+    list-style: none;
+}
+
+#totais-categoria li {
+    background: #f0f9ff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* ===== GUIA PARA INICIANTES ===== */
+main.iniciante {
+    max-width: 900px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.iniciante .introducao {
+    font-size: 1.1rem;
+    color: #2563eb;
+    margin-bottom: 32px;
+}
+
+/* ===== IMAGEM ===== */
+.imagem-regra {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+    .imagem-regra {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* ===== FOOTER ===== */
 footer {
-    background-color: #0f172a;
+    background-color: #3b82f6;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: white;
     font-size: 14px;
     margin-top: auto;
 }
-
