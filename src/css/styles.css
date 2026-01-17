@@ -31,7 +31,7 @@ header a {
     text-decoration: none;
 }
 
-/* ===== MAIN ===== */
+/* ===== MAIN PADRÃO ===== */
 main {
     max-width: 900px;
     width: 100%;
@@ -42,7 +42,7 @@ main {
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-/* ===== TEXTOS ===== */
+/* ===== TÍTULOS GERAIS ===== */
 h1 {
     text-align: center;
     font-size: 2.2rem;
@@ -59,22 +59,29 @@ h2 {
 
 p {
     text-align: center;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto 20px auto;
     line-height: 1.7;
 }
 
-/* ===== SEÇÃO DE RECURSOS ===== */
+/* ======================
+   SEÇÃO DE RECURSOS
+====================== */
 .secao-recursos {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.secao-recursos h2 {
+    font-size: 1.6rem;
+    color: #1e293b;
+    margin-bottom: 20px;
 }
 
 .secao-recursos ul {
     list-style: none;
-    width: 100%;
     max-width: 360px;
+    margin: 0 auto;
 }
 
 .secao-recursos li {
@@ -83,7 +90,6 @@ p {
 
 .secao-recursos a {
     display: block;
-    text-align: center;
     padding: 14px;
     background-color: #f1f5f9;
     border-radius: 12px;
@@ -99,23 +105,60 @@ p {
     color: #ffffff;
 }
 
-/* ===== BOTÕES ===== */
-button {
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
+/* ======================
+   GUIA PARA INICIANTES
+====================== */
+main.iniciante {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-button:hover {
-    background-color: #1d4ed8;
+/* Título principal */
+.iniciante h1 {
+    font-size: 2.2rem;
+    color: #1e293b;
+    margin-bottom: 16px;
 }
 
-/* ===== IMAGEM ===== */
+/* Introdução */
+.iniciante .introducao {
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Cards de conteúdo */
+.iniciante .card-sessao {
+    background-color: #f8fafc;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 30px;
+    border: 1px solid #e5e7eb;
+}
+
+.iniciante .card-sessao h2 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.iniciante .card-sessao ul {
+    padding-left: 20px;
+}
+
+.iniciante .card-sessao li {
+    margin-bottom: 10px;
+}
+
+/* Imagem */
 .imagem-regra {
     display: block;
     max-width: 380px;
@@ -123,6 +166,67 @@ button:hover {
     height: auto;
     margin: 30px auto;
     border-radius: 14px;
+}
+
+/* ======================
+   NAVEGAÇÃO FINAL
+====================== */
+.iniciante .navegacao-final {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.iniciante .botao-proximo,
+.iniciante .botao-voltar {
+    flex: 1;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+/* Botão Próximo */
+.iniciante .botao-proximo {
+    background-color: #2563eb;
+    color: white;
+}
+
+.iniciante .botao-proximo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255,255,255,0.15);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.iniciante .botao-proximo:hover::after {
+    opacity: 1;
+}
+
+/* Botão Voltar */
+.iniciante .botao-voltar {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.iniciante .botao-voltar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(37,99,235,0.08);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.iniciante .botao-voltar:hover::after {
+    opacity: 1;
 }
 
 /* ===== FOOTER ===== */
