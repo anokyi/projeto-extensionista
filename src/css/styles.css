@@ -1,0 +1,252 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #7ab346;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* Main Styles */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.secao-recursos a {
+    display: block;
+    padding: 12px 16px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.secao-recursos a:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+td button {
+    background-color: #ef4444;
+}
+
+td button:hover {
+    background-color: #dc2626;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #f1f5f9;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* ===== INPUTS ===== */
+input, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* ===== TOTAL ===== */
+#total {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* ===== LISTA CATEGORIA ===== */
+#totais-categoria {
+    margin-top: 12px;
+    list-style: none;
+}
+
+#totais-categoria li {
+    background: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* ============================
+   GUIA PARA INICIANTES
+============================ */
+
+main.iniciante {
+    max-width: 900px;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(29, 29, 28, 0.08);
+}
+
+.iniciante h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #4c4e5f;
+}
+
+.iniciante .introducao {
+    font-size: 1.1rem;
+    color: #98e237;
+    margin-bottom: 32px;
+}
+
+.iniciante .card-sessao {
+    background: #f9fafb;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.iniciante .card-sessao h2 {
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.iniciante .card-sessao ul {
+    padding-left: 20px;
+}
+
+.iniciante .card-sessao li {
+    margin-bottom: 8px;
+}
+
+.iniciante .imagem-regra {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 24px auto;
+}
+
+.iniciante .dica-extra,
+.iniciante .dica-pratica {
+    background: #ecfeff;
+    border-left: 5px solid #06b6d4;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.iniciante .caixa-alerta {
+    background: #fff7ed;
+    border-left: 5px solid #f97316;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.iniciante .navegacao-final {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.iniciante .botao-proximo,
+.iniciante .botao-voltar {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.iniciante .botao-proximo {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.iniciante .botao-voltar {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.iniciante .botao-proximo:hover {
+    background: #1d4ed8;
+}
+
+.iniciante .botao-voltar:hover {
+    background: #d1d5db;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #1e293b;
+    color: white;
+    font-size: 14px;
+}
