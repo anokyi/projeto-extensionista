@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     transition: background-color 0.25s ease,
                 color 0.25s ease,
                 transform 0.25s ease,
@@ -13,7 +13,7 @@
                 opacity 0.25s ease;
 }
 
-/* ===== BODY ===== */
+/* ===== BODY + TRANSIÇÃO DE PÁGINA ===== */
 body {
     background-color: #f8fafc;
     color: #334155;
@@ -50,30 +50,29 @@ header:hover {
 
 header a {
     color: #ffffff;
-    font-size: 1.9rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: bold;
     text-decoration: none;
 }
 
-/* ===== MAIN ===== */
+/* ===== MAIN PADRÃO ===== */
 main {
     max-width: 900px;
     width: 100%;
     margin: 40px auto;
-    padding: 36px;
+    padding: 32px;
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     animation: fadeUp 0.5s ease both;
 }
 
-/* ===== TÍTULOS ===== */
+/* ===== TEXTOS ===== */
 h1 {
     text-align: center;
     font-size: 2.2rem;
     color: #1e293b;
     margin-bottom: 12px;
-    font-weight: 700;
 }
 
 h2 {
@@ -81,7 +80,6 @@ h2 {
     font-size: 1.5rem;
     color: #2563eb;
     margin-bottom: 20px;
-    font-weight: 600;
 }
 
 p {
@@ -89,7 +87,6 @@ p {
     max-width: 650px;
     margin: 0 auto 20px auto;
     line-height: 1.7;
-    color: #475569;
 }
 
 /* ======================
@@ -131,7 +128,7 @@ p {
 .secao-recursos a:hover {
     background-color: #2563eb;
     color: #ffffff;
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.02);
     box-shadow: 0 10px 25px rgba(37,99,235,0.25);
 }
 
@@ -139,7 +136,12 @@ p {
    GUIA PARA INICIANTES
 ====================== */
 main.iniciante {
+    max-width: 900px;
+    margin: 40px auto;
     padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 /* Introdução */
@@ -168,7 +170,16 @@ main.iniciante {
 }
 
 .iniciante .card-sessao h2 {
+    text-align: center;
     margin-bottom: 12px;
+}
+
+.iniciante .card-sessao ul {
+    padding-left: 20px;
+}
+
+.iniciante .card-sessao li {
+    margin-bottom: 10px;
 }
 
 /* ===== IMAGEM ===== */
@@ -200,7 +211,7 @@ main.iniciante {
     text-align: center;
     padding: 14px 0;
     border-radius: 12px;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -228,6 +239,10 @@ main.iniciante {
     transform: translateY(-2px);
 }
 
+.iniciante .botao-proximo:active {
+    transform: scale(0.98);
+}
+
 /* Voltar */
 .iniciante .botao-voltar {
     background-color: #f1f5f9;
@@ -248,6 +263,10 @@ main.iniciante {
 
 .iniciante .botao-voltar:hover {
     transform: translateY(-2px);
+}
+
+.iniciante .botao-voltar:active {
+    transform: scale(0.98);
 }
 
 /* ===== FOOTER ===== */
@@ -273,4 +292,3 @@ footer {
         transform: translateY(0);
     }
 }
-
