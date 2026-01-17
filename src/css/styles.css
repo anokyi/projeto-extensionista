@@ -1,4 +1,6 @@
-/* ===== RESET ===== */
+/* =========================
+   RESET GLOBAL
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,50 +8,78 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Body Styles */
+/* =========================
+   VARIÁVEIS DE COR (VERDE)
+========================= */
+:root {
+    --verde-principal: #4ade80;
+    --verde-escuro: #22c55e;
+    --verde-hover: #16a34a;
+    --verde-claro: #dcfce7;
+
+    --cinza-escuro: #1e293b;
+    --cinza-medio: #64748b;
+    --cinza-claro: #f1f5f9;
+    --branco: #ffffff;
+    --vermelho: #ef4444;
+    --vermelho-hover: #dc2626;
+}
+
+/* =========================
+   BODY
+========================= */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8fafc;
+    color: #334155;
     line-height: 1.6;
     padding: 20px;
 }
 
-/* Header Styles */
+/* =========================
+   HEADER
+========================= */
 header {
-    background: #7ab346;
-    color: #ffffff;
-    padding: 10px 0;
+    background: var(--verde-principal);
+    color: var(--branco);
+    padding: 16px 0;
     text-align: center;
-    margin-bottom: 20px;
-    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 12px;
 }
 
 header a {
-    color: #ffffff;
+    color: var(--branco);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* Main Styles */
+/* =========================
+   MAIN
+========================= */
 main {
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* =========================
+   TIPOGRAFIA
+========================= */
 h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 2.4rem;
     text-align: center;
+    margin-bottom: 16px;
+    color: var(--cinza-escuro);
 }
 
 h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: var(--verde-hover);
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -57,51 +87,68 @@ h3 {
 p {
     margin-bottom: 15px;
     text-align: center;
+    color: var(--cinza-medio);
 }
+
+/* =========================
+   LINKS DE RECURSOS
+========================= */
 .secao-recursos a {
     display: block;
-    padding: 12px 16px;
-    background-color: #f1f5f9;
-    border-radius: 10px;
+    padding: 14px 18px;
+    background-color: var(--verde-claro);
+    border-radius: 12px;
     text-decoration: none;
-    color: #1e293b;
+    color: var(--verde-hover);
     font-weight: bold;
     transition: 0.2s;
 }
 
 .secao-recursos a:hover {
-    background-color: #2563eb;
-    color: white;
+    background-color: var(--verde-principal);
+    color: var(--branco);
 }
 
-/* ===== BUTTONS ===== */
+/* =========================
+   BOTÕES
+========================= */
 button {
-    background-color: #2563eb;
-    color: white;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
     border: none;
-    padding: 10px 16px;
+    padding: 10px 18px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--verde-hover);
 }
 
 td button {
-    background-color: #ef4444;
+    background-color: var(--vermelho);
 }
 
 td button:hover {
-    background-color: #dc2626;
+    background-color: var(--vermelho-hover);
 }
 
-/* ===== TABLE ===== */
+/* =========================
+   TABELA
+========================= */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background: var(--branco);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 thead {
-    background-color: #f1f5f9;
+    background-color: var(--verde-claro);
 }
 
 th, td {
@@ -109,72 +156,73 @@ th, td {
     text-align: left;
 }
 
-/* ===== INPUTS ===== */
+/* =========================
+   INPUTS
+========================= */
 input, select {
     width: 100%;
-    padding: 8px;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: 8px;
     border: 1px solid #cbd5e1;
 }
 
 input:focus, select:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: var(--verde-principal);
 }
 
-/* ===== TOTAL ===== */
+/* =========================
+   TOTAL
+========================= */
 #total {
-    color: #16a34a;
+    color: var(--verde-hover);
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* ===== LISTA CATEGORIA ===== */
+/* =========================
+   LISTA DE CATEGORIAS
+========================= */
 #totais-categoria {
     margin-top: 12px;
     list-style: none;
 }
 
 #totais-categoria li {
-    background: #f8fafc;
-    padding: 10px 14px;
-    border-radius: 8px;
+    background: var(--verde-claro);
+    padding: 12px 16px;
+    border-radius: 10px;
     margin-bottom: 8px;
+    font-weight: bold;
 }
 
-/* ============================
+/* =========================
    GUIA PARA INICIANTES
-============================ */
-
+========================= */
 main.iniciante {
     max-width: 900px;
     padding: 40px;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(29, 29, 28, 0.08);
-}
-
-.iniciante h1 {
-    font-size: 2rem;
-    margin-bottom: 16px;
-    color: #4c4e5f;
+    background: var(--branco);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .iniciante .introducao {
     font-size: 1.1rem;
-    color: #98e237;
+    color: var(--verde-hover);
     margin-bottom: 32px;
+    text-align: center;
 }
 
 .iniciante .card-sessao {
-    background: #f9fafb;
+    background: #f0fdf4;
     padding: 24px;
-    border-radius: 12px;
+    border-radius: 14px;
     margin-bottom: 24px;
 }
 
 .iniciante .card-sessao h2 {
-    margin-bottom: 12px;
-    color: #111827;
+    color: var(--verde-escuro);
 }
 
 .iniciante .card-sessao ul {
@@ -185,19 +233,15 @@ main.iniciante {
     margin-bottom: 8px;
 }
 
-.iniciante .imagem-regra {
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 24px auto;
-}
-
+/* =========================
+   CAIXAS DE DESTAQUE
+========================= */
 .iniciante .dica-extra,
 .iniciante .dica-pratica {
-    background: #ecfeff;
-    border-left: 5px solid #06b6d4;
+    background: #ecfdf5;
+    border-left: 5px solid var(--verde-principal);
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 16px;
 }
 
@@ -205,10 +249,13 @@ main.iniciante {
     background: #fff7ed;
     border-left: 5px solid #f97316;
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 16px;
 }
 
+/* =========================
+   NAVEGAÇÃO FINAL
+========================= */
 .iniciante .navegacao-final {
     display: flex;
     justify-content: space-between;
@@ -218,35 +265,35 @@ main.iniciante {
 .iniciante .botao-proximo,
 .iniciante .botao-voltar {
     text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 12px 22px;
+    border-radius: 10px;
     font-weight: bold;
 }
 
 .iniciante .botao-proximo {
-    background: #2563eb;
-    color: #ffffff;
+    background: var(--verde-escuro);
+    color: var(--branco);
+}
+
+.iniciante .botao-proximo:hover {
+    background: var(--verde-hover);
 }
 
 .iniciante .botao-voltar {
     background: #e5e7eb;
-    color: #111827;
+    color: var(--cinza-escuro);
 }
 
-.iniciante .botao-proximo:hover {
-    background: #1d4ed8;
-}
-
-.iniciante .botao-voltar:hover {
-    background: #d1d5db;
-}
-
-/* ===== FOOTER ===== */
+/* =========================
+   FOOTER
+========================= */
 footer {
-    margin-top: auto;
+    margin-top: 40px;
     text-align: center;
-    padding: 15px;
-    background-color: #1e293b;
-    color: white;
+    padding: 16px;
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
     font-size: 14px;
+    border-radius: 12px;
 }
+
