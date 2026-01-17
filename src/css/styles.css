@@ -9,46 +9,44 @@
 }
 
 /* =========================
-   VARIÁVEIS DE COR (VERDE)
+   VARIÁVEIS DE COR
 ========================= */
 :root {
-    --verde-principal: #4ade80;
-    --verde-escuro: #22c55e;
-    --verde-hover: #16a34a;
-    --verde-claro: #dcfce7;
+    --azul-fundo: #0f172a;
+    --azul-header-footer: #020617;
+    --azul-card: #1e293b;
+    --azul-destaque: #2563eb;
+    --azul-hover: #1d4ed8;
 
-    --cinza-escuro: #1e293b;
-    --cinza-medio: #64748b;
-    --cinza-claro: #f1f5f9;
-    --branco: #ffffff;
-    --vermelho: #ef4444;
-    --vermelho-hover: #dc2626;
+    --texto-principal: #e5e7eb;
+    --texto-secundario: #94a3b8;
+    --borda: #334155;
 }
 
 /* =========================
    BODY
 ========================= */
 body {
-    background-color: #f8fafc;
-    color: #334155;
+    min-height: 100vh;
+    background-color: var(--azul-fundo);
+    color: var(--texto-principal);
     line-height: 1.6;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* =========================
-   HEADER
+   HEADER (FAIXA SUPERIOR)
 ========================= */
 header {
-    background: var(--verde-principal);
-    color: var(--branco);
-    padding: 16px 0;
+    width: 100%;
+    background-color: var(--azul-header-footer);
+    padding: 20px 0;
     text-align: center;
-    margin-bottom: 24px;
-    border-radius: 12px;
 }
 
 header a {
-    color: var(--branco);
+    color: var(--texto-principal);
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
@@ -58,63 +56,68 @@ header a {
    MAIN
 ========================= */
 main {
-    max-width: 1000px;
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 32px 20px;
 }
 
 /* =========================
    TIPOGRAFIA
 ========================= */
 h1 {
-    font-size: 2.4rem;
     text-align: center;
-    margin-bottom: 16px;
-    color: var(--cinza-escuro);
+    font-size: 2.4rem;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 1.8rem;
     margin-bottom: 12px;
-    color: var(--verde-hover);
+    color: var(--azul-destaque);
 }
 
 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 p {
-    margin-bottom: 15px;
     text-align: center;
-    color: var(--cinza-medio);
+    color: var(--texto-secundario);
+    margin-bottom: 16px;
 }
 
 /* =========================
-   LINKS DE RECURSOS
+   LINKS / OPÇÕES
 ========================= */
+.secao-recursos {
+    display: grid;
+    gap: 12px;
+}
+
 .secao-recursos a {
     display: block;
     padding: 14px 18px;
-    background-color: var(--verde-claro);
-    border-radius: 12px;
+    background-color: var(--azul-card);
+    border-radius: 10px;
     text-decoration: none;
-    color: var(--verde-hover);
+    color: var(--texto-principal);
     font-weight: bold;
     transition: 0.2s;
 }
 
 .secao-recursos a:hover {
-    background-color: var(--verde-principal);
-    color: var(--branco);
+    background-color: var(--azul-destaque);
 }
 
 /* =========================
    BOTÕES
 ========================= */
 button {
-    background-color: var(--verde-escuro);
-    color: var(--branco);
+    background-color: var(--azul-destaque);
+    color: var(--texto-principal);
     border: none;
     padding: 10px 18px;
     border-radius: 8px;
@@ -124,15 +127,15 @@ button {
 }
 
 button:hover {
-    background-color: var(--verde-hover);
+    background-color: var(--azul-hover);
 }
 
 td button {
-    background-color: var(--vermelho);
+    background-color: #dc2626;
 }
 
 td button:hover {
-    background-color: var(--vermelho-hover);
+    background-color: #b91c1c;
 }
 
 /* =========================
@@ -140,20 +143,20 @@ td button:hover {
 ========================= */
 table {
     width: 100%;
+    margin-top: 24px;
     border-collapse: collapse;
-    margin-top: 20px;
-    background: var(--branco);
+    background-color: var(--azul-card);
     border-radius: 12px;
     overflow: hidden;
 }
 
 thead {
-    background-color: var(--verde-claro);
+    background-color: #020617;
 }
 
 th, td {
-    padding: 12px;
-    text-align: left;
+    padding: 14px;
+    border-bottom: 1px solid var(--borda);
 }
 
 /* =========================
@@ -162,138 +165,43 @@ th, td {
 input, select {
     width: 100%;
     padding: 10px;
+    background-color: #020617;
+    border: 1px solid var(--borda);
     border-radius: 8px;
-    border: 1px solid #cbd5e1;
+    color: var(--texto-principal);
 }
 
 input:focus, select:focus {
     outline: none;
-    border-color: var(--verde-principal);
+    border-color: var(--azul-destaque);
 }
 
 /* =========================
    TOTAL
 ========================= */
 #total {
-    color: var(--verde-hover);
     font-weight: bold;
     font-size: 1.2rem;
+    color: var(--azul-destaque);
 }
 
 /* =========================
-   LISTA DE CATEGORIAS
+   LISTAS (SEM PONTOS)
 ========================= */
-#totais-categoria {
-    margin-top: 12px;
+ul, ol {
     list-style: none;
+    padding-left: 0;
 }
 
 #totais-categoria li {
-    background: var(--verde-claro);
+    background-color: var(--azul-card);
     padding: 12px 16px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 8px;
-    font-weight: bold;
 }
 
 /* =========================
-   GUIA PARA INICIANTES
+   GUIA INICIANTE
 ========================= */
 main.iniciante {
-    max-width: 900px;
-    padding: 40px;
-    background: var(--branco);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.iniciante .introducao {
-    font-size: 1.1rem;
-    color: var(--verde-hover);
-    margin-bottom: 32px;
-    text-align: center;
-}
-
-.iniciante .card-sessao {
-    background: #f0fdf4;
-    padding: 24px;
-    border-radius: 14px;
-    margin-bottom: 24px;
-}
-
-.iniciante .card-sessao h2 {
-    color: var(--verde-escuro);
-}
-
-.iniciante .card-sessao ul {
-    padding-left: 20px;
-}
-
-.iniciante .card-sessao li {
-    margin-bottom: 8px;
-}
-
-/* =========================
-   CAIXAS DE DESTAQUE
-========================= */
-.iniciante .dica-extra,
-.iniciante .dica-pratica {
-    background: #ecfdf5;
-    border-left: 5px solid var(--verde-principal);
-    padding: 16px;
-    border-radius: 10px;
-    margin-top: 16px;
-}
-
-.iniciante .caixa-alerta {
-    background: #fff7ed;
-    border-left: 5px solid #f97316;
-    padding: 16px;
-    border-radius: 10px;
-    margin-top: 16px;
-}
-
-/* =========================
-   NAVEGAÇÃO FINAL
-========================= */
-.iniciante .navegacao-final {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.iniciante .botao-proximo,
-.iniciante .botao-voltar {
-    text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.iniciante .botao-proximo {
-    background: var(--verde-escuro);
-    color: var(--branco);
-}
-
-.iniciante .botao-proximo:hover {
-    background: var(--verde-hover);
-}
-
-.iniciante .botao-voltar {
-    background: #e5e7eb;
-    color: var(--cinza-escuro);
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-    margin-top: 40px;
-    text-align: center;
-    padding: 16px;
-    background-color: var(--cinza-escuro);
-    color: var(--branco);
-    font-size: 14px;
-    border-radius: 12px;
-}
 
