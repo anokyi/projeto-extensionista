@@ -1,3 +1,4 @@
+/* ===== IMPORT DA FONTE ===== */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 /* ===== RESET ===== */
@@ -5,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     transition: background-color 0.25s ease,
                 color 0.25s ease,
                 transform 0.25s ease,
@@ -51,7 +52,7 @@ header:hover {
 header a {
     color: #ffffff;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -73,6 +74,7 @@ h1 {
     font-size: 2.2rem;
     color: #1e293b;
     margin-bottom: 12px;
+    font-weight: 700;
 }
 
 h2 {
@@ -80,6 +82,7 @@ h2 {
     font-size: 1.5rem;
     color: #2563eb;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 p {
@@ -87,6 +90,7 @@ p {
     max-width: 650px;
     margin: 0 auto 20px auto;
     line-height: 1.7;
+    font-weight: 500;
 }
 
 /* ======================
@@ -169,19 +173,6 @@ main.iniciante {
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.iniciante .card-sessao h2 {
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.iniciante .card-sessao ul {
-    padding-left: 20px;
-}
-
-.iniciante .card-sessao li {
-    margin-bottom: 10px;
-}
-
 /* ===== IMAGEM ===== */
 .imagem-regra {
     display: block;
@@ -189,11 +180,6 @@ main.iniciante {
     width: 100%;
     margin: 30px auto;
     border-radius: 14px;
-}
-
-.imagem-regra:hover {
-    transform: scale(1.02);
-    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
 }
 
 /* ======================
@@ -211,62 +197,8 @@ main.iniciante {
     text-align: center;
     padding: 14px 0;
     border-radius: 12px;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Próximo */
-.iniciante .botao-proximo {
-    background-color: #2563eb;
-    color: white;
-}
-
-.iniciante .botao-proximo::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(255,255,255,0.15);
-    opacity: 0;
-}
-
-.iniciante .botao-proximo:hover::after {
-    opacity: 1;
-}
-
-.iniciante .botao-proximo:hover {
-    transform: translateY(-2px);
-}
-
-.iniciante .botao-proximo:active {
-    transform: scale(0.98);
-}
-
-/* Voltar */
-.iniciante .botao-voltar {
-    background-color: #f1f5f9;
-    color: #1e293b;
-}
-
-.iniciante .botao-voltar::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(37,99,235,0.08);
-    opacity: 0;
-}
-
-.iniciante .botao-voltar:hover::after {
-    opacity: 1;
-}
-
-.iniciante .botao-voltar:hover {
-    transform: translateY(-2px);
-}
-
-.iniciante .botao-voltar:active {
-    transform: scale(0.98);
 }
 
 /* ===== FOOTER ===== */
@@ -292,3 +224,4 @@ footer {
         transform: translateY(0);
     }
 }
+
